@@ -1,10 +1,10 @@
 # AKAISPACE Documentation 🚀
 
-Presentation Video:- https://youtu.be/kc5bFRVaA5U?si=LzmpcztO40DPAfzd
+**Presentation Video**:- [AKAISPACE Presentation Video](https://youtu.be/kc5bFRVaA5U?si=LzmpcztO40DPAfzd)
 
 ## GitHub Repository 🌍
 
-🔗 **Project Repository:** [AKAISPACE GitHub Repo](https://github.com/AKAI-admin/Akailon-app-task-backend.git)
+🔗 **Project Repository:** [AKAISPACE GitHub Repo](https://github.com/Its-Harshit-work/Akaispace-BNB.git)
 
 ---
 
