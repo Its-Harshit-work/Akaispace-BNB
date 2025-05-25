@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Helvetica-Medium";
+  src: url("./fonts/Helvetica/helveticaneue-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("./fonts/Helvetica/helveticaneue-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rexlia";
+  src: url("./fonts/Rexlia/rexlia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Albert-Sans";
+  src: url("./fonts/Albert/AlbertSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
