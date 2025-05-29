@@ -2,9 +2,9 @@
 
 **Presentation Video**:- [AKAISPACE Presentation Video](https://youtu.be/kc5bFRVaA5U?si=LzmpcztO40DPAfzd)
 
-## GitHub Repository 🌍
+## Akai Space Customer Platform for Data Labelling Solutions 🌍
 
-🔗 **Project Repository:** [AKAISPACE GitHub Repo](https://github.com/Its-Harshit-work/Akaispace-BNB.git)
+🔗 **Customer Platform:** [AKAISPACE Customer Platform](https://www.akaispace.xyz/)
 
 ---
 
