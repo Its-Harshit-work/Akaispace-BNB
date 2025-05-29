@@ -13,15 +13,16 @@ contract CreditStore is Ownable {
 
     /**
      * @dev Event emitted when credits are purchased.
-     * Matches the event definition in the provided listener.js.
      * - buyer: The address that purchased the credits.
      * - bnbAmount: The amount of BNB paid.
      * - creditAmount: The number of credits purchased.
+     * - userId: The MongoDB _id of the user.
      */
     event CreditsPurchased(
         address indexed buyer,
         uint256 bnbAmount,
-        uint256 creditAmount
+        uint256 creditAmount,
+        string userId
     );
 
     /**
@@ -36,16 +37,18 @@ contract CreditStore is Ownable {
 
     /**
      * @dev Allows a user to purchase a specified number of credits.
-     * The user must send BNB equal to `_numberOfCredits * creditPriceInWei`.
+     * The user must send BNB equal to `_numberOfCredits * creditPriceInWei` and provide their MongoDB _id.
      * @param _numberOfCredits The number of credits to purchase.
+     * @param _userId The MongoDB _id of the user.
      */
-    function purchaseCredits(uint256 _numberOfCredits) public payable {
+    function purchaseCredits(uint256 _numberOfCredits, string memory _userId) public payable {
         require(_numberOfCredits > 0, "Must purchase at least one credit");
+        require(bytes(_userId).length > 0, "User ID cannot be empty");
         
         uint256 expectedWei = _numberOfCredits * creditPriceInWei;
         require(msg.value == expectedWei, "Incorrect BNB amount for credits");
 
-        emit CreditsPurchased(msg.sender, msg.value, _numberOfCredits);
+        emit CreditsPurchased(msg.sender, msg.value, _numberOfCredits, _userId);
     }
 
     /**
@@ -73,4 +76,4 @@ contract CreditStore is Ownable {
      * However, such direct sends won't trigger credit purchases or events.
      */
     receive() external payable {}
-} 
+}
